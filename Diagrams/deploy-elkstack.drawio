@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-20T19:28:14.116Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36 Edg/93.0.961.52" etag="qE_oxT3KkWuRP7DJ8IQP" version="15.2.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-20T23:29:20.035Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36 Edg/93.0.961.52" etag="bZZMUVOFQEsVmm_yr7HS" version="15.2.9" type="github">
   <diagram id="9okl2IrPLdP8ZMf2GUG3" name="Page-1">
     <mxGraphModel dx="2023" dy="979" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -53,8 +53,8 @@
         <mxCell id="8RZf7hjbh3fnnqzhATRY-54" value="PROTOCOLS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;labelBackgroundColor=#F8CECC;" parent="1" vertex="1">
           <mxGeometry x="-811" y="920" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8RZf7hjbh3fnnqzhATRY-55" value="NETWORKS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;labelBackgroundColor=#D5E8D4;" parent="1" vertex="1">
-          <mxGeometry x="-801" y="953.25" width="120" height="30" as="geometry" />
+        <mxCell id="8RZf7hjbh3fnnqzhATRY-55" value="RESOURCES" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;labelBackgroundColor=#D5E8D4;" parent="1" vertex="1">
+          <mxGeometry x="-806" y="953.25" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="8RZf7hjbh3fnnqzhATRY-56" value="CONFIGS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;labelBackgroundColor=#FFFFCC;" parent="1" vertex="1">
           <mxGeometry x="-791" y="983.25" width="100" height="30" as="geometry" />
