@@ -2,7 +2,13 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![project-diagram](Diagrams/deploy-elkstack.png)
+![project-diagram](Images/deploy-elkstack.png)
+
+
+
+
+
+
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -35,12 +41,12 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Metricbeat monitors system and elasticsearch activity.
 
 The configuration details of each machine may be found below.
-| Name   | Function    | IP Address    | Operating System |
-| ------ | ----------- | ------------- | ---------------- |
-| Jump-0 | Gateway     | 13.88.119.76  | 18.04.1-Ubuntu   |
-| Web-0  | Web Server  | 13.93.204.0   | 18.04.1-Ubuntu   |
-| Web-1  | Web Server  | 13.93.204.0   | 18.04.1-Ubuntu   |
-| ELK-0  | SIEM Server | 20.185.18.166 | 18.04.1-Ubuntu   |
+| Name   | Function    | Public IPv4   | Internal IPv4 | Operating System |
+| ------ | ----------- | ------------- | ------------- | ---------------- |
+| Jump-0 | Gateway     | 13.88.119.76  | 10.0.0.4      | 18.04.1-Ubuntu   |
+| Web-0  | Web Server  | 13.93.204.0   | 10.0.0.5      | 18.04.1-Ubuntu   |
+| Web-1  | Web Server  | 13.93.204.0   | 10.0.0.8      | 18.04.1-Ubuntu   |
+| ELK-0  | SIEM Server | 20.185.18.166 | 10.1.0.5      | 18.04.1-Ubuntu   |
 
 ### Access Policies
 
