@@ -1,20 +1,20 @@
-<mxfile host="app.diagrams.net" modified="2021-09-20T19:01:46.213Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36 Edg/93.0.961.52" etag="H4OoPynEP-lMyOp19oIM" version="15.2.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-20T19:17:53.411Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36 Edg/93.0.961.52" etag="gC7WXVZg8mGR3k3Ry-yh" version="15.2.9" type="github">
   <diagram id="9okl2IrPLdP8ZMf2GUG3" name="Page-1">
-    <mxGraphModel dx="2195" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2771" dy="1146" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="8RZf7hjbh3fnnqzhATRY-45" value="&lt;span style=&quot;background-color: rgb(213 , 232 , 212)&quot;&gt;NETWORK&lt;br&gt;BRIDGE&lt;/span&gt;" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.router" parent="1" vertex="1">
-          <mxGeometry x="-740" y="600" width="76.92" height="60" as="geometry" />
+          <mxGeometry x="-700" y="650" width="76.92" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8RZf7hjbh3fnnqzhATRY-50" value="&lt;h1&gt;deploy-elkstack&lt;/h1&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;" parent="1" vertex="1">
           <mxGeometry x="-514.02" y="10" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8RZf7hjbh3fnnqzhATRY-52" value="Location - US WEST" style="swimlane;horizontal=0;labelBackgroundColor=#F8CECC;fontSize=18;strokeWidth=4;fillColor=#E6E6E6;startSize=30;rounded=1;shadow=1;sketch=0;glass=0;" parent="1" vertex="1">
-          <mxGeometry x="-650" y="80" width="640" height="530" as="geometry" />
+          <mxGeometry x="-650" y="80" width="640" height="540" as="geometry" />
         </mxCell>
         <mxCell id="8RZf7hjbh3fnnqzhATRY-51" value="Azure Availability Group ~ red-available&#xa;proximity placement group ~ none" style="swimlane;labelBackgroundColor=#D5E8D4;fontSize=15;strokeWidth=4;fillColor=#E6E6E6;startSize=70;rounded=1;shadow=0;sketch=0;glass=1;" parent="8RZf7hjbh3fnnqzhATRY-52" vertex="1">
-          <mxGeometry x="50" y="120" width="570" height="400" as="geometry">
+          <mxGeometry x="50" y="120" width="570" height="410" as="geometry">
             <mxRectangle x="130" y="33.63" width="280" height="70" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -24,17 +24,20 @@
         <mxCell id="8RZf7hjbh3fnnqzhATRY-89" value="SSH" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=#F8CECC;fontSize=18;" parent="8RZf7hjbh3fnnqzhATRY-51" source="8RZf7hjbh3fnnqzhATRY-10" target="8RZf7hjbh3fnnqzhATRY-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8RZf7hjbh3fnnqzhATRY-10" value="&lt;span style=&quot;background-color: rgb(213 , 232 , 212)&quot;&gt;VM ~ JUMP&lt;br&gt;13.88.119.76&lt;br&gt;18.04.1-Ubuntu&lt;br&gt;Standard_B1s&lt;/span&gt;" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/generic_server.svg;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;" parent="8RZf7hjbh3fnnqzhATRY-51" vertex="1">
-          <mxGeometry x="39.999999999999964" y="270" width="28.000000000000004" height="50" as="geometry" />
+        <mxCell id="8RZf7hjbh3fnnqzhATRY-10" value="&lt;span style=&quot;background-color: rgb(213 , 232 , 212)&quot;&gt;VM ~ JUMP&lt;br&gt;13.88.119.76&lt;br&gt;10.0.0.4&lt;br&gt;18.04.1-Ubuntu&lt;br&gt;Standard_B1s&lt;/span&gt;" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/generic_server.svg;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;" parent="8RZf7hjbh3fnnqzhATRY-51" vertex="1">
+          <mxGeometry x="37.40999999999997" y="269" width="28.000000000000004" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="8RZf7hjbh3fnnqzhATRY-6" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 204)&quot;&gt;ANSIBLE&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 204)&quot;&gt;/root/.ssh&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 204)&quot;&gt;roles/install-dvwa&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 204)&quot;&gt;roles/install-elk&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 204)&quot;&gt;roles/install-filebeat&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 204)&quot;&gt;roles/install-metricbeat&lt;/span&gt;&lt;/div&gt;" style="shape=image;html=1;verticalAlign=middle;verticalLabelPosition=middle;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/social-media-2106/24/social_media_social_media_logo_docker-128.png;labelPosition=right;align=left;" parent="8RZf7hjbh3fnnqzhATRY-51" vertex="1">
+          <mxGeometry x="107" y="310" width="68" height="68" as="geometry" />
         </mxCell>
         <mxCell id="8RZf7hjbh3fnnqzhATRY-85" value="load-balancer-pool&#xa;for(ip in config:webservers)" style="swimlane;rounded=1;shadow=0;glass=1;labelBackgroundColor=#D5E8D4;sketch=0;fontSize=18;strokeWidth=4;fillColor=#E6E6E6;startSize=60;" parent="8RZf7hjbh3fnnqzhATRY-51" vertex="1">
-          <mxGeometry x="270" y="80" width="280" height="214.62" as="geometry" />
+          <mxGeometry x="270" y="80" width="280" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="8RZf7hjbh3fnnqzhATRY-3" value="&lt;span style=&quot;background-color: rgb(213 , 232 , 212)&quot;&gt;VM ~ WEB-0&lt;br&gt;&amp;nbsp;13.93.204.0&amp;nbsp;&lt;br&gt;18.04.1-Ubuntu&amp;nbsp;&lt;br&gt;filebeat&amp;nbsp; -&amp;gt; 5066&lt;br&gt;metricbeat: -&amp;gt; 5601&lt;/span&gt;" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/web_server.svg;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;" parent="8RZf7hjbh3fnnqzhATRY-85" vertex="1">
-          <mxGeometry x="59.9999999999999" y="139" width="40" height="50" as="geometry" />
+        <mxCell id="8RZf7hjbh3fnnqzhATRY-3" value="&lt;span style=&quot;background-color: rgb(213 , 232 , 212)&quot;&gt;VM ~ WEB-0&lt;br&gt;&amp;nbsp;13.93.204.0&lt;br&gt;10.0.0.5&amp;nbsp;&lt;br&gt;18.04.1-Ubuntu&amp;nbsp;&lt;br&gt;filebeat&amp;nbsp; -&amp;gt; 5066&lt;br&gt;metricbeat: -&amp;gt; 5601&lt;/span&gt;" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/web_server.svg;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;" parent="8RZf7hjbh3fnnqzhATRY-85" vertex="1">
+          <mxGeometry x="59.9999999999999" y="160" width="40" height="50" as="geometry" />
         </mxCell>
         <mxCell id="8RZf7hjbh3fnnqzhATRY-29" value="&lt;span style=&quot;background-color: rgb(255 , 255 , 204)&quot;&gt;DVWA&lt;br&gt;PHP/MySQL&lt;/span&gt;" style="shape=image;html=1;verticalAlign=middle;verticalLabelPosition=middle;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/social-media-2106/24/social_media_social_media_logo_docker-128.png;labelPosition=right;align=left;" parent="8RZf7hjbh3fnnqzhATRY-85" vertex="1">
-          <mxGeometry x="125.9799999999999" y="130" width="68" height="68" as="geometry" />
+          <mxGeometry x="119.9999999999999" y="151" width="68" height="68" as="geometry" />
         </mxCell>
         <mxCell id="8RZf7hjbh3fnnqzhATRY-40" value="&lt;span style=&quot;background-color: rgb(248 , 206 , 204)&quot;&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;HTTP&lt;/font&gt;&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=18;" parent="8RZf7hjbh3fnnqzhATRY-51" source="8RZf7hjbh3fnnqzhATRY-2" target="8RZf7hjbh3fnnqzhATRY-3" edge="1">
           <mxGeometry x="-0.6879" relative="1" as="geometry">
@@ -44,20 +47,17 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8RZf7hjbh3fnnqzhATRY-6" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 204)&quot;&gt;ANSIBLE&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 204)&quot;&gt;/root/.ssh&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 204)&quot;&gt;roles/install-dvwa&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 204)&quot;&gt;roles/install-elk&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 204)&quot;&gt;roles/install-filebeat&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 204)&quot;&gt;roles/install-metricbeat&lt;/span&gt;&lt;/div&gt;" style="shape=image;html=1;verticalAlign=middle;verticalLabelPosition=middle;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/social-media-2106/24/social_media_social_media_logo_docker-128.png;labelPosition=right;align=left;" parent="8RZf7hjbh3fnnqzhATRY-51" vertex="1">
-          <mxGeometry x="107" y="300" width="68" height="68" as="geometry" />
-        </mxCell>
-        <mxCell id="8RZf7hjbh3fnnqzhATRY-9" value="&lt;span style=&quot;background-color: rgb(248 , 206 , 204) ; font-size: 18px&quot;&gt;Network Security Group ~ NSG 0&lt;br&gt;default inbound / outbound&lt;br&gt;+ allow from any on 80 to 13.93.204.0&lt;br&gt;+ allow from 68.183.115.88 on 22&lt;br&gt;&lt;/span&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3E;strokeColor=none;dashed=0;verticalLabelPosition=middle;verticalAlign=middle;align=left;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.generic_firewall;labelPosition=right;" parent="8RZf7hjbh3fnnqzhATRY-52" vertex="1">
+        <mxCell id="8RZf7hjbh3fnnqzhATRY-9" value="&lt;span style=&quot;background-color: rgb(248 , 206 , 204) ; font-size: 18px&quot;&gt;Network Security Group ~ NSG 0&lt;br&gt;default inbound / outbound&lt;br&gt;+ allow from any on 80 to 13.93.204.0&lt;br&gt;+ allow from 68.183.115.88 on 22&lt;br&gt;+ allow from 10.0.0.5 to virtual-network on 22&lt;br&gt;&lt;/span&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3E;strokeColor=none;dashed=0;verticalLabelPosition=middle;verticalAlign=middle;align=left;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.generic_firewall;labelPosition=right;" parent="8RZf7hjbh3fnnqzhATRY-52" vertex="1">
           <mxGeometry x="120.00000000000001" y="33.629999999999995" width="53.48" height="45.25" as="geometry" />
         </mxCell>
         <mxCell id="8RZf7hjbh3fnnqzhATRY-54" value="PROTOCOLS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;labelBackgroundColor=#F8CECC;" parent="1" vertex="1">
-          <mxGeometry x="-820" y="910" width="130" height="30" as="geometry" />
+          <mxGeometry x="-811" y="920" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="8RZf7hjbh3fnnqzhATRY-55" value="NETWORKS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;labelBackgroundColor=#D5E8D4;" parent="1" vertex="1">
           <mxGeometry x="-801" y="953.25" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="8RZf7hjbh3fnnqzhATRY-56" value="CONFIGS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;labelBackgroundColor=#FFFFCC;" parent="1" vertex="1">
-          <mxGeometry x="-781" y="1003.25" width="100" height="30" as="geometry" />
+          <mxGeometry x="-791" y="983.25" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="8RZf7hjbh3fnnqzhATRY-58" value="Location - US EAST" style="swimlane;horizontal=0;rounded=1;shadow=0;glass=0;labelBackgroundColor=#F8CECC;sketch=0;fontSize=18;strokeWidth=4;fillColor=#E6E6E6;startSize=30;" parent="1" vertex="1">
           <mxGeometry x="-520" y="640" width="510" height="370" as="geometry" />
@@ -103,16 +103,16 @@
         <mxCell id="8RZf7hjbh3fnnqzhATRY-67" value="Internet" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/internet_cloud.svg;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="-843.49" y="100" width="235.24" height="148.2" as="geometry" />
         </mxCell>
-        <mxCell id="8RZf7hjbh3fnnqzhATRY-82" value="10.1.0.0/16" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=#F8CECC;fontSize=18;" parent="1" source="8RZf7hjbh3fnnqzhATRY-45" target="8RZf7hjbh3fnnqzhATRY-21" edge="1">
+        <mxCell id="8RZf7hjbh3fnnqzhATRY-82" value="10.1.0.0/16&lt;br&gt;22" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=#F8CECC;fontSize=18;" parent="1" source="8RZf7hjbh3fnnqzhATRY-45" target="8RZf7hjbh3fnnqzhATRY-21" edge="1">
           <mxGeometry x="-0.639" y="-30" relative="1" as="geometry">
             <mxPoint as="offset" />
             <Array as="points">
-              <mxPoint x="-580" y="630" />
+              <mxPoint x="-580" y="680" />
               <mxPoint x="-580" y="935" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="_GerBc0_md_IA9-ksIjP-8" value="10.0.0.0/16" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.333;entryDx=0;entryDy=0;labelBackgroundColor=#F8CECC;fontSize=18;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="8RZf7hjbh3fnnqzhATRY-10" target="8RZf7hjbh3fnnqzhATRY-45">
+        <mxCell id="_GerBc0_md_IA9-ksIjP-8" value="10.0.0.0/16&lt;br&gt;22" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.333;entryDx=0;entryDy=0;labelBackgroundColor=#F8CECC;fontSize=18;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="8RZf7hjbh3fnnqzhATRY-10" target="8RZf7hjbh3fnnqzhATRY-45">
           <mxGeometry x="-0.0725" y="35" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
