@@ -10,7 +10,7 @@ The files in this repository were used to configure the network depicted below.
 
 
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above.
 
   - [hosts](./hosts)
   - [ansible.cfg](./ansible.cfg)
@@ -52,7 +52,7 @@ The configuration details of each machine may be found below.
 
 The VMs on this network expose 3 ports to the public network. 22, 80 and 5601.
 
-Only the Jump-0 machine can accept SSH connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the jumpbox machine can accept SSH connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - 68.183.115.88
 
 Machines within the network can only be accessed using ssh from the ansible docker container on Jump-0.
@@ -71,11 +71,12 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because
 - it's configuration and deployment will be quick and consistant 
 
-The playbook implements the following tasks:
-- Install docker components and tools
+The playbooks implement the following tasks:
+- Install docker components and tools 
+- download and launch a docker dvwa container
 - download and launch a docker elk container
 - enable docker service start on boot
 
@@ -88,7 +89,7 @@ This ELK server is configured to monitor the following machines:
 - 10.0.0.5
 - 10.0.0.8
 
-We have installed the following Beats on these machines:
+The following Beats have been installed on these machines:
 - filebeat
 - metricbeat
 
@@ -96,7 +97,7 @@ These Beats allow us to collect the following information from each machine:
 - Filebeat monitors for changes made to log files by services such as docker, elasticsearch, logbeat, metricbeat and kibana. Metricbeat monitors elasticsearch activity.
 
 ### Using the Playbook
-In order to use the playbook, you will need to have an Ansible control node already configured, as well as 3 VMs to be used as 2 web servers and an ELK server. 
+In order to use the playbooks, you will need to have an Ansible control node already configured, as well as 3 VMs to be used as 2 web servers and an ELK server. 
 
 Assuming you have an Ansible control node completely provisioned 
 Assuming you have 3 VMs provisioned (web-0,web-1,elk-0) with ssh configured to allow the Ansible control node ssh access:
@@ -106,15 +107,15 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include the IPv4 address for 
   - [webservers] web-0, web-1 
   - [elk] elk-0
-- Run the dvwa playbook
+- Run the dvwa playbook from /etc/ansible
   - run `sudo roles/ansible-playbook roles/install-dvwa/tasks/main.yml`
   - navigate to `http://<web-0-ip>:80/setup.php` to check the installation worked.
-- Run the elk playbook
+- Run the elk playbook from /etc/ansible
   - run `sudo roles/ansible-playbook roles/install-elk/tasks/main.yml`
   - navigate to `http://<elk-0-ip>:5601` to check the installation worked.
-- Run the filebeat playbook
+- Run the filebeat playbook from /etc/ansible
   - run `sudo roles/ansible-playbook roles/install-filebeat/tasks/main.yml`
   - navigate to Kibana > Discover > select [filebeat-*]  to confirm the installation worked.
-- Run the metricbeat playbook
+- Run the metricbeat playbook from /etc/ansible
   - run `sudo roles/ansible-playbook roles/install-metricbeat/tasks/main.yml`
   - navigate to Kibana > Discover > select [metricbeat-*]  to confirm the installation worked.
